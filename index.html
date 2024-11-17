@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário T3</title>
+  </head>
+  <body>
+    <header>
+      <h1>Cadastre-se</h1>
+      <h2>Compre ingressos e combos de pipoca com conforto e comodidade.</h2>
+    </header>
+    <main>
+      <form action="">
+        <fieldset>
+          <legend>Preencha os campos</legend>
+
+          <div>
+            <label for="nome"> Nome: </label>
+            <input
+              type="text"
+              name="nome"
+              id="nome"
+              placeholder="Escreva seu nome"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="email">Email: </label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Digite seu email"
+              required
+            /> <!--O required obriga o preenchimento do campo-->
+          </div>
+
+          <div>
+            <label for="password">Senha: </label>
+                <input 
+                type="password"
+                name="senha"
+                id="senha"
+                placeholder="Digite sua senha"
+                required
+                />
+          </div>
+        </fieldset>
+        <fieldset>
+            <div>
+                <label for="estados">Estado:</label>
+                <select name="estado" id="estado"> <!--Selecione (select) uma das opções (options)-->
+                  <option value="AC">AC</option>
+                  <option value="SP">SP</option>
+                  <option value="RJ">RJ</option>
+                  <option value="PB">PB</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="nascimento">
+                    Data de Nascimento:
+                </label>
+                <input type="date" name="nascimento" id="nascimento"/>
+            </div>
+
+            <div>
+                <label for="foto">Selecione uma foto:</label>
+                <input type="file" name="foto" id="foto" accept="image/png , image/jpeg">
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Você é um robô?</legend>
+            <input type="radio" name="robo" id="sim"> <!--o name tem que ser o mesmo nome para que selecione somente uma opção-->
+            <label for="sim">Sou um robô</label> 
+
+            <input type="radio" name="robo" id="nao"> <!--o name tem que ser o mesmo nome para que selecione somente uma opção-->
+            <label for="nao">Não sou um robô</label> 
+
+            <input type="radio" name="robo" id="talvez"> <!--o name tem que ser o mesmo nome para que selecione somente uma opção-->
+            <label for="talvez">Talvez eu seja um robô</label>
+          </fieldset>
+
+          <button type="submit">Enviar</button> <!--substituir o input type submit por ser limitado a estilização-->
+          <button type="reset">Resetar</button> <!--Serve para resetar-->
+
+
+      </form>
+    </main>
+  </body>
+</html>
